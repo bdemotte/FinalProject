@@ -54,26 +54,6 @@ print(SEPERATOR)
 
 
 
-
-
-
-
-
-
-
-# Bar chart to display number of buildings per city
-
-data = pd.DataFrame({
-  'top ten': ['Burj Khalifa', 'Shanghai Tower', 'Makkah Royal Clock Tower', 'Ping An Finance Center', 'Lotte World Tower', 'One World Trade Center', 'Guangzhou CTF Finance Centre', 'Tianjin CTF Finance Centre', 'CITIC Tower', 'TAIPEI 101'],
-  'lat' : [25.197197, 31.233518, 21.4186828, 22.533096, 37.5124705, 40.7127431, 23.1175997, 39.021667, 39.930818, 25.0336752],
-  'lon' : [55.2743764, 121.505618, 39.8252756, 114.055865, 127.1023832, -74.0133795, 113.3259267, 117.698056, 116.4359296, 121.5648831]
-})
-
-st.map(data)
-
-
-
-
 # Show various map data and information on the top 10 buildings
 print(SEPERATOR)
 
@@ -179,4 +159,14 @@ img10 = Image.open("taipei-tower.jpg")
 st.image(img10, width=500)
 st.text("The TAIPEI 101 is located at the following address: ")
 st.text('Taipei 101, 7, Section 5, Xinyi Road, Xicun Village, Xinyi District, Xinyi Commercial Zone, Taipei, 11049, Taiwan')
+
+
+data = pd.DataFrame({
+  'top ten': ['Burj Khalifa', 'Shanghai Tower', 'Makkah Royal Clock Tower', 'Ping An Finance Center', 'Lotte World Tower', 'One World Trade Center', 'Guangzhou CTF Finance Centre', 'Tianjin CTF Finance Centre', 'CITIC Tower', 'TAIPEI 101'],
+  'lat' : [25.197197, 31.233518, 21.4186828, 22.533096, 37.5124705, 40.7127431, 23.1175997, 39.021667, 39.930818, 25.0336752],
+  'lon' : [55.2743764, 121.505618, 39.8252756, 114.055865, 127.1023832, -74.0133795, 113.3259267, 117.698056, 116.4359296, 121.5648831]
+})
+
+st.map(data)
+
 
