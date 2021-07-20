@@ -102,7 +102,7 @@ st.text('The Burj Khalifa is located at the following address: ')
 from geopy.geocoders import Nominatim
 geolocator = Nominatim(user_agent="4XZD8eEnHEVBSwaEQy4wKIVKZGfkeo5P")
 location1 = geolocator.reverse((df['Latitude'][0], df['Longitude'][0]), language='en')
-print(location1.address)
+st.text(location1.address)
 
 print(SEPERATOR)
 
