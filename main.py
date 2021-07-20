@@ -95,6 +95,8 @@ df = pd.read_csv("Skyscrapers2021.csv")
 
 print("The Largest Building in the World is the Burj Khalifa\n\n")
 st.header('The Largest Building in the World is the Burj Khalifa')
+from PIL import Image
+img = Image.open("burj-khalifa.png")
 
 print("The Burj Khalifa is located at the following address:\n")
 st.text('The Burj Khalifa is located at the following address: ')
