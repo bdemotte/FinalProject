@@ -163,12 +163,17 @@ st.text('Taipei 101, 7, Section 5, Xinyi Road, Xicun Village, Xinyi District, Xi
 
 st.title('Where they are located: ')
 
+
+
 data = pd.DataFrame({
   'top ten': ['Burj Khalifa', 'Shanghai Tower', 'Makkah Royal Clock Tower', 'Ping An Finance Center', 'Lotte World Tower', 'One World Trade Center', 'Guangzhou CTF Finance Centre', 'Tianjin CTF Finance Centre', 'CITIC Tower', 'TAIPEI 101'],
   'lat' : [25.197197, 31.233518, 21.4186828, 22.533096, 37.5124705, 40.7127431, 23.1175997, 39.021667, 39.930818, 25.0336752],
   'lon' : [55.2743764, 121.505618, 39.8252756, 114.055865, 127.1023832, -74.0133795, 113.3259267, 117.698056, 116.4359296, 121.5648831]
 })
 
+if st.checkbox('Per Location'):
+    st.subheader('Building Name')
+    st.write(data)
 st.map(data)
 
 
