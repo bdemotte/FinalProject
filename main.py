@@ -172,7 +172,9 @@ data = pd.DataFrame({
 })
 
 map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+  'top ten': ['Burj Khalifa', 'Shanghai Tower', 'Makkah Royal Clock Tower', 'Ping An Finance Center', 'Lotte World Tower', 'One World Trade Center', 'Guangzhou CTF Finance Centre', 'Tianjin CTF Finance Centre', 'CITIC Tower', 'TAIPEI 101'],
+  'lat' : [25.197197, 31.233518, 21.4186828, 22.533096, 37.5124705, 40.7127431, 23.1175997, 39.021667, 39.930818, 25.0336752],
+  'lon' : [55.2743764, 121.505618, 39.8252756, 114.055865, 127.1023832, -74.0133795, 113.3259267, 117.698056, 116.4359296, 121.5648831]
     columns=['lat', 'lon'])
 
 st.map(map_data)
