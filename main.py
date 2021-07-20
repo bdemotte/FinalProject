@@ -63,23 +63,28 @@ print(SEPERATOR)
 
 # Bar chart to display number of buildings per city
 
-# def barchart(x,y):
-#     df = skyscraperdata
-#     counts = ['City']
-#     st.subheader("Number of Skyscrapers per City")
-#     cities = sorted(df['City'].unique().tolist(), reverse=True)
-#     citylist = [x for x in cities]
-#     y_pos = np.arange(len(citylist))
-#     plt.rcParams['figure.figsize'] = (5, 10)  # Defines run-time configuration
-#     plt.bar(y_pos, counts)
-#     plt.yticks(y_pos, citylist)
-#     plt.title("Skyscrapers per City in the Top 100")
-#     plt.xlabel('Number of Skyscrapers')
-#     st.pyplot(plt)
+data = pd.DataFrame({
+  'top ten': ['Burj Khalifa', 'Shanghai Tower', 'Makkah Royal Clock Tower', 'Ping An Finance Center', 'Lotte World Tower', 'One World Trade Center', 'Guangzhou CTF Finance Centre', 'Tianjin CTF Finance Centre', 'CITIC Tower', 'TAIPEI 101'],
+  'lat' : [25.197197, 31.233518, 21.4186828, 22.533096, 37.5124705, 40.7127431, 23.1175997, 39.021667, 39.930818, 25.0336752],
+  'lon' : [55.2743764, 121.505618, 39.8252756, 114.055865, 127.1023832, -74.0133795, 113.3259267, 117.698056, 116.4359296, 121.5648831]
+})
 
-print(SEPERATOR)
+midpoint = (np.average(data['lat']), np.average(data['lon']))
 
-
+st.deck_gl_chart(
+            viewport={
+                'latitude': midpoint[0],
+                'longitude':  midpoint[1],
+                'zoom': 4
+            },
+            layers=[{
+                'type': 'ScatterplotLayer',
+                'data': data,
+                'radiusScale': 250,
+   'radiusMinPixels': 5,
+                'getFillColor': [248, 24, 148],
+            }]
+        )
 
 
 
