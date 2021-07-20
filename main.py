@@ -75,12 +75,12 @@ st.deck_gl_chart(
             viewport={
                 'latitude': midpoint[0],
                 'longitude':  midpoint[1],
-                'zoom': 4
+                'zoom': 10
             },
             layers=[{
                 'type': 'ScatterplotLayer',
                 'data': data,
-                'radiusScale': 250,
+                'radiusScale': 100000,
    'radiusMinPixels': 5,
                 'getFillColor': [248, 24, 148],
             }]
