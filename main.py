@@ -108,6 +108,10 @@ st.text('Burj Khalifa, 1, Sheikh Mohammed bin Rashid Boulevard, Al Manzil, Downt
 print(SEPERATOR)
 
 st.header('The Second Largest Building in the World is the Shanghai Tower ')
+from PIL import Image
+img = Image.open("shanghai-tower.jpg")
+
+st.image(img, width=200)
 st.text('The Shanghai Tower is located at the following address: ')
 st.text('Dongchang Road, Lujiazui Subdistrict, Pudong, 200010, China')
 
