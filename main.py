@@ -106,8 +106,8 @@ print(location1.address)
 
 print(SEPERATOR)
 
-st.header("The Second Largest Building in the World is the Shanghai Tower ")
-st.text("The Shanghai Tower is located at the following address: ")
+st.header('The Second Largest Building in the World is the Shanghai Tower ')
+st.text('The Shanghai Tower is located at the following address: ')
 from geopy.geocoders import Nominatim
 geolocator = Nominatim(user_agent="4XZD8eEnHEVBSwaEQy4wKIVKZGfkeo5P")
 location2 = geolocator.reverse((df['Latitude'][1], df['Longitude'][1]), language='en')
