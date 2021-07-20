@@ -130,7 +130,6 @@ print(SEPERATOR)
 st.header("The Seventh and Eigth Tallest Building in the World are Tied! The Guangzhou CTF Finance Centre and Tianjin CTF Finance Center are both 1,739 ft tall!")
 st.text("The Guangzhou CTF Finance Center is located at the following address: ")
 st.text("The Tianjin CTF Finance Center is located at the following address: ")
-)
 
 print(SEPERATOR)
 
