@@ -171,7 +171,7 @@ data = pd.DataFrame({
   'lon' : [55.2743764, 121.505618, 39.8252756, 114.055865, 127.1023832, -74.0133795, 113.3259267, 117.698056, 116.4359296, 121.5648831]
 })
 
-if st.checkbox():
+if st.checkbox(data{'top ten'}):
     st.subheader('Building Name')
     st.write(data)
 st.map(data)
