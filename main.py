@@ -98,6 +98,8 @@ st.header('The Largest Building in the World is the Burj Khalifa')
 from PIL import Image
 img = Image.open("burj-khalifa.png")
 
+st.image(img, width=200)
+
 print("The Burj Khalifa is located at the following address:\n")
 st.text('The Burj Khalifa is located at the following address: ')
 st.text('Burj Khalifa, 1, Sheikh Mohammed bin Rashid Boulevard, Al Manzil, Downtown Dubai, Dubai, PO BOX 114822, United Arab Emirates')
