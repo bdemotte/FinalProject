@@ -96,9 +96,9 @@ df = pd.read_csv("Skyscrapers2021.csv")
 print("The Largest Building in the World is the Burj Khalifa\n\n")
 st.header('The Largest Building in the World is the Burj Khalifa')
 from PIL import Image
-img = Image.open("burj-khalifa.jpg")
+img1 = Image.open("burj-khalifa.jpg")
 
-st.image(img, width=500)
+st.image(img1, width=500)
 
 print("The Burj Khalifa is located at the following address:\n")
 st.text('The Burj Khalifa is located at the following address: ')
@@ -109,9 +109,9 @@ print(SEPERATOR)
 
 st.header('The Second Largest Building in the World is the Shanghai Tower ')
 from PIL import Image
-img = Image.open("shanghai-tower.jpg")
+img2 = Image.open("shanghai-tower.jpg")
 
-st.image(img, width=500)
+st.image(img2, width=500)
 st.text('The Shanghai Tower is located at the following address: ')
 st.text('Dongchang Road, Lujiazui Subdistrict, Pudong, 200010, China')
 
