@@ -161,7 +161,7 @@ st.text("The TAIPEI 101 is located at the following address: ")
 st.text('Taipei 101, 7, Section 5, Xinyi Road, Xicun Village, Xinyi District, Xinyi Commercial Zone, Taipei, 11049, Taiwan')
 
 
-st.title('Where are the Top 10 Skyscrapers in the World located?')
+st.title('Where they are located: ')
 
 data = pd.DataFrame({
   'top ten': ['Burj Khalifa', 'Shanghai Tower', 'Makkah Royal Clock Tower', 'Ping An Finance Center', 'Lotte World Tower', 'One World Trade Center', 'Guangzhou CTF Finance Centre', 'Tianjin CTF Finance Centre', 'CITIC Tower', 'TAIPEI 101'],
