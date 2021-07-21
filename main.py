@@ -59,9 +59,9 @@ def select_options(df):
     
     CITIES_SELECTED = st.sidebar.multiselect('Select Cities to Display', sorted(CITIES))
                  
-    mark_cities = df['City'].isin(CITIES_SELECTED)
-    df = df[mark_cities]
-    mapping_data(df)
+    df_citiesselected = df[df['City'] == CITIES_SELECTED]
+    
+    mapping_data(df_citiesselected)
     
     
 def mapping_data(df):
