@@ -166,10 +166,8 @@ st.title('Where they are located: ')
 
 data = pd.DataFrame({
   'top ten': ['Burj Khalifa', 'Shanghai Tower', 'Makkah Royal Clock Tower', 'Ping An Finance Center', 'Lotte World Tower', 'One World Trade Center', 'Guangzhou CTF Finance Centre', 'Tianjin CTF Finance Centre', 'CITIC Tower', 'TAIPEI 101'],
-  'lat' : [25.197197, 31.233518, 21.4186828, 22.533096, 37.5124705, 40.7127431, 23.1175997, 39.021667, 39.930818, 25.0336752],
-  'lon' : [55.2743764, 121.505618, 39.8252756, 114.055865, 127.1023832, -74.0133795, 113.3259267, 117.698056, 116.4359296, 121.5648831]
-})
-
-st.map(data)
+  'height': ['2,717 ft', '2,073 ft', '1,972 ft', '1,965 ft', '1,819 ft', '1,776 ft', '1,739 ft', '1,739 ft', '1,731 ft', '1,667 ft']
+  
+st.line_chart(data)
 
 
