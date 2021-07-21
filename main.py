@@ -11,7 +11,6 @@ Description:    This is a description of the project
 import pandas as pd
 import streamlit as st
 import numpy as np
-import plotly.express as px
 # import matplotlib.pyplot as plt
 
 
@@ -50,7 +49,6 @@ def get_data():
   data = pd.read_csv("Skyscrapers2021.csv")
   return pd.read_csv(data)
 
-st.map(data)
 
 
  
