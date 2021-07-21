@@ -42,6 +42,7 @@ print(skyscraperdata)
 
 # User Input, map data, and update on the data frame for all locations
 
+st.header('The Worlds 100 Largest Skyscrapers')
 
 def load_data(data):
   df = pd.read_csv("Skyscrapers2021.csv", index_col=0, names=col_names, skiprows=[0])
@@ -64,7 +65,6 @@ def mapping_data(df):
     st.map(df)
     
 
-    
     
     
 def main():
