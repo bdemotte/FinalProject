@@ -79,7 +79,11 @@ st.subheader('Height of each of the Top 100 Skyscrapers')
 st.bar_chart(skyscraperdata['In Feet'])
 
 
-
+st.subheader(‘Skyscraper 2021 Data’)
+if st.checkbox(‘Show Skyscraper Data’):
+    st.subheader(‘Skyscraper Data’)
+    st.write(skyscraperdata)
+#st.write(center_info_data)
 
 
 
