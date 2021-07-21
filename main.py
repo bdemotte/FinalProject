@@ -66,7 +66,11 @@ def mapping_data(df):
 
 
  
-
+def main():
+  df = load_data("Skyscrapers2021.csv")
+  select_options(df)
+main() 
+  
 
 
 # Show various map data and information on the top 10 buildings
