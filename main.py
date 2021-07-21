@@ -72,7 +72,7 @@ def main():
 main()  
 
 
-midpoint = (np.average(data['lat']), np.average(data['lon']))
+midpoint = (np.average(data['latitude']), np.average(data['longitude']))
 
 st.deck_gl_chart(
             viewport={
