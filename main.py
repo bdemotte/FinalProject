@@ -45,8 +45,11 @@ SEPERATOR = 500 * '='
 print(SEPERATOR)
 # User Input, map data, and update on the data frame for all locations
 
-  
-  
+def get_data():
+  data = pd.read_csv("Skyscrapers2021.csv")
+  return pd.read_csv(data)
+
+st.map(data)
 
 
  
