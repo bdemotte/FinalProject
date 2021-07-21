@@ -10,6 +10,7 @@ Description:    This is a description of the project
 # Import Functions Necessary to run this program
 import pandas as pd
 import streamlit as st
+from bokeh.plotting import figure
 import numpy as np
 # import matplotlib.pyplot as plt
 
@@ -168,10 +169,14 @@ chart_data = pd.DataFrame({
   'top ten': ['Burj Khalifa', 'Shanghai Tower', 'Makkah Royal Clock Tower', 'Ping An Finance Center', 'Lotte World Tower', 'One World Trade Center', 'Guangzhou CTF Finance Centre', 'Tianjin CTF Finance Centre', 'CITIC Tower', 'TAIPEI 101'],
   'height': ['2,717 ft', '2,073 ft', '1,972 ft', '1,965 ft', '1,819 ft', '1,776 ft', '1,739 ft', '1,739 ft', '1,731 ft', '1,667 ft'])
   
-arr = np.random.normal(1, 1, size = 100)
-fig, ax = plt.subplots(chart_data)
-st.pyplot(fig)
  
- 
+p = figure(
+    title='simple line example',
+    x_axis_label='top ten',
+    y_axis_label='height')
+
+p.line(x, y, legend_label='Trend', line_width=2)
+
+st.bokeh_chart(p, use_container_width=True)
 
 
