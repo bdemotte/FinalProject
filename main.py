@@ -67,7 +67,6 @@ def select_options(df):
     
     
 def mapping_data(df):
-    df = pd.DataFrame(skyscraperdata)
     st.map(df)
         
     
