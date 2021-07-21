@@ -79,6 +79,10 @@ def main():
 main()  
 
 
+fig = plt.figure()
+plt.plot(skyscraperdata)
+fig.show()
+
 
 
 # barchart of heights in feet
