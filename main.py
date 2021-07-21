@@ -81,8 +81,8 @@ main()
 # barchart of heights in feet
 
 
-st.subheader('Height of each of the Top 100 Skyscrapers')
-st.bar_chart(skyscraperdata['In Feet'])
+#st.subheader('Height of each of the Top 100 Skyscrapers')
+#st.bar_chart(skyscraperdata['In Feet'])
 
 
 
