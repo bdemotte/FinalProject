@@ -172,7 +172,10 @@ st.text("The TAIPEI 101 is located at the following address: ")
 st.text('Taipei 101, 7, Section 5, Xinyi Road, Xicun Village, Xinyi District, Xinyi Commercial Zone, Taipei, 11049, Taiwan')
 
   
-  
+def main():
+  df = load_data("Skyscrapers2021.csv")
+  select_options(df)
+main()   
   
   
   
