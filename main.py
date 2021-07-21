@@ -49,6 +49,22 @@ def get_data():
   data = pd.read_csv("Skyscrapers2021.csv")
   return pd.read_csv(data)
 
+def bar_chart():
+    df = load_data("Skyscrapers2021.csv.csv")
+    counts = []
+    st.subheader("Number of Locations in each Country")
+    states = sorted(df["City"].unique().tolist(), reverse=True)
+    cityList = [x for x in states]
+    for i in cityList:
+        counts.append(df[df['City'] == i].shape[0]
+    y_pos = np.arange(len(stateList))
+    plt.rcParams['figure.figsize'] = (5, 10)    # Defines run-time configuration
+    plt.barh(y_pos, counts)
+    plt.yticks(y_pos, stateList)
+    plt.title("Skyscrapers per City")
+    plt.xlabel('Number of Skyscrapers')
+    st.pyplot(plt)
+
 
 
  
