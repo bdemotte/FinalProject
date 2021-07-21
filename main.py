@@ -40,6 +40,10 @@ pd.set_option('display.max_colwidth', None)
 print(skyscraperdata)
 
 
+st.subheader('Skyscraper Data')
+if st.checkbox('Show Skyscraper Data'):
+    st.write(skyscraperdata)
+
 # User Input, map data, and update on the data frame for all locations
 
 st.title('The Worlds 100 Largest Skyscrapers Map')
@@ -79,11 +83,8 @@ st.subheader('Height of each of the Top 100 Skyscrapers')
 st.bar_chart(skyscraperdata['In Feet'])
 
 
-st.subheader('Skyscraper Data')
-if st.checkbox('Show Skyscraper Data'):
-    
-    st.write(skyscraperdata)
-#st.write(center_info_data)
+
+
 
 
 
