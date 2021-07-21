@@ -55,6 +55,7 @@ def bar_chart():
     cityList = [x for x in cities]
     for i in cityList:
         counts.append(df[df['City'] == i].shape[0]
+    y_pos = np.arrange(len(cityList))
     plt.bar(y_pos, counts)
     plt.yticks(y_pos, cityList)
     plt.title("Skyscrapers per City")
