@@ -63,13 +63,6 @@ def select_options(df):
 def mapping_data(df):
     df = pd.DataFrame({'latitude': df['Y'], 'longitude': df['X']})
     st.map(df)
-
-
- 
-def main():
-  df = load_data("Skyscrapers2021.csv")
-  select_options(df)
-main() 
   
 
 
