@@ -72,23 +72,6 @@ def main():
 main()  
 
 
-midpoint = (np.average(skyscraperdata['latitude']), np.average(skyscraperdata['longitude']))
-
-st.deck_gl_chart(
-            viewport={
-                'latitude': midpoint[0],
-                'longitude':  midpoint[1],
-                'zoom': 4
-            },
-            layers=[{
-                'type': 'ScatterplotLayer',
-                'data': skyscraperdata,
-                'radiusScale': 250,
-   'radiusMinPixels': 5,
-                'getFillColor': [248, 24, 148],
-            }]
-        )
-
 # barchart of heights in feet
 
 
