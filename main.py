@@ -54,14 +54,16 @@ def load_data(data):
 
 def select_options(df):
     st.sidebar.write("Filter On Map")
-    df['City'] = df['City']
+    
     CITIES = df['City'].unique()
     
     CITIES_SELECTED = st.sidebar.multiselect('Select Cities to Display', sorted(CITIES))
-                 
-    df_citiesselected = df[df['City'] == CITIES_SELECTED]
+        
+    mark_cities = df['City'].isin(CITIES_SELECTED)
+    df = df[mark_cities]
+    #df_citiesselected = df[df['City'] == CITIES_SELECTED]
     
-    mapping_data(df_citiesselected)
+    mapping_data(df)
     
     
 def mapping_data(df):
