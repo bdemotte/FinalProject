@@ -67,7 +67,7 @@ def mapping_data(df):
              
 
   
-
+# THIS ALL WORKS DO NOT MESS WITH THIS SECTION
 
 # Show various map data and information on the top 10 buildings
 
@@ -174,6 +174,8 @@ st.image(img10, width=500)
 st.text("The TAIPEI 101 is located at the following address: ")
 st.text('Taipei 101, 7, Section 5, Xinyi Road, Xicun Village, Xinyi District, Xinyi Commercial Zone, Taipei, 11049, Taiwan')
 
+
+# MAY NEED TO MAKE CHANGES HERE
   
 def main():
   df = load_data("Skyscrapers2021.csv")
