@@ -46,16 +46,15 @@ print(SEPERATOR)
 # User Input, map data, and update on the data frame for all locations
 
 
+def select_options():
+   st.sidebar.write("Filter On The Map: ")
 
-# def select_options():
-#     st.sidebar.write("Filter On The Map: ")
-#
-# print(SEPERATOR)
+ 
 
 
 
 # Show various map data and information on the top 10 buildings
-print(SEPERATOR)
+
 
 st.title('Top 10 Skyscrapers in the World')
 
