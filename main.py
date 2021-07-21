@@ -179,7 +179,6 @@ st.text('Taipei 101, 7, Section 5, Xinyi Road, Xicun Village, Xinyi District, Xi
 
 def main():
   df = load_data("Skyscrapers2021.csv")
-  st.title("The Top 100 Skyscrapers in the World Analysis")
   select_options(df)
 main() 
   
