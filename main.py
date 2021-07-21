@@ -166,9 +166,12 @@ st.title('Where they are located: ')
 
 chart_data = pd.DataFrame({
   'top ten': ['Burj Khalifa', 'Shanghai Tower', 'Makkah Royal Clock Tower', 'Ping An Finance Center', 'Lotte World Tower', 'One World Trade Center', 'Guangzhou CTF Finance Centre', 'Tianjin CTF Finance Centre', 'CITIC Tower', 'TAIPEI 101'],
-  'height': ['2,717 ft', '2,073 ft', '1,972 ft', '1,965 ft', '1,819 ft', '1,776 ft', '1,739 ft', '1,739 ft', '1,731 ft', '1,667 ft']
-  np.random.randn(20,3)
-  columns=['top ten', 'height'])
-st.line_chart(chart_data)
+  'height': ['2,717 ft', '2,073 ft', '1,972 ft', '1,965 ft', '1,819 ft', '1,776 ft', '1,739 ft', '1,739 ft', '1,731 ft', '1,667 ft'])
+  
+arr = np.random.normal(1, 1, size = 100)
+fig, ax = plt.subplots(chart_data)
+st.pyplot(fig)
+ 
+ 
 
 
