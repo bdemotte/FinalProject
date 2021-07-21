@@ -52,7 +52,7 @@ def load_data(data):
 
 def select_options(df):
     st.sidebar.write("Filter On Map")
-    df['City'] = df['City'].map(abbriev_state).fillna(df['City'])
+    df['City'] = df['City']
     CITIES = df['City'].unique()
     st.subheader("Map to Display Skyscraper Location")
     CITIES_SELECTED = st.sidebar.multiselect('Select Cities to Display', sorted(CITIES))
