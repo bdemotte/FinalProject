@@ -58,12 +58,13 @@ def select_options(df):
     df = df[mark_cities]
     
     
-    
-    mapping_data(df)
-             
 def mapping_data(df):
     df = pd.DataFrame({'latitude': df['Y'], 'longitude': df['X']})
     st.map(df)
+    
+mapping_data(df)
+             
+
   
 
 
