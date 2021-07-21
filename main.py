@@ -48,7 +48,32 @@ print(SEPERATOR)
 
 def load_data(data):
   df = pd.read_csv("Skyscrapers2021.csv", index_col=0, names=col_names, skiprows=[0])
+  return df
 
+def select_options(df):
+    st.sidebar.write("Filter On Map")
+    df['City'] = df['City'].map(abbriev_state).fillna(df['City'])
+    CITIES = df['City'].unique()
+    st.subheader("Map to Display Skyscraper Location)
+    CITIES_SELECTED = st.sidebar.multiselect('Select Cities to Display', sorted(CITIES))
+                 
+    mark_cities = df['City'].isin(CITIES_SELECTED)
+    df = df[mark_cities]
+    
+    mapping_data(df)
+             
+def mapping_data(df):
+    df = pd.DataFrame9{'latitude': df['Y'], 'longitude': df['X']})
+    st.map(df)
+                 
+    
+    
+    
+    
+    
+    
+    
+    
 def mapping_data(df)
   df = pd.DataFrame({'latitude': df['Y'], 'longitude': df['X']})
 
