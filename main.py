@@ -57,7 +57,6 @@ def bar_chart():
     cityList = [x for x in states]
     for i in cityList:
         counts.append(df[df['City'] == i].shape[0]
-    y_pos = np.arange(len(cityList))
     plt.rcParams['figure.figsize'] = (5, 10)    # Defines run-time configuration
     plt.barh(y_pos, counts)
     plt.yticks(y_pos, stateList)
