@@ -63,23 +63,14 @@ st.title('Top 10 Skyscrapers in the World')
 df = pd.read_csv("Skyscrapers2021.csv")
 
 
-st.markdown("## " + 'Names of the Top Ten Skyscrapers in the World')
-st.markdown("#### " +"Which Skyscraper would you like to see?")
+st.header('The Largest Building in the World is the Burj Khalifa')
+from PIL import Image
+img1 = Image.open("burj-khalifa.jpg")
 
-selected_metrics = st.selectbox(
-  label="Take your pick!", options=['Burj Khalifa','Shanghai Tower', 'Makkah Royal Clock Tower', 'Ping An Finance Center', 'Lotte World Tower', 'One World Trade Center', 'Guangzhou CTF Finance Centre', 'Tianjin CTF Finance Centre', 'CITIC Tower', 'TAIPEI 101']) 
+st.image(img1, width=500)
 
-fig = go.Figure()
-if selected_metrics == 'Burj Khalifa':
-     fig.add_trace(go.
-     st.header('The Largest Building in the World is the Burj Khalifa')
-     from PIL import Image
-     img1 = Image.open("burj-khalifa.jpg")
-
-     st.image(img1, width=500)
-
-     st.text('The Burj Khalifa is located at the following address: ')
-     st.text('Burj Khalifa, 1, Sheikh Mohammed bin Rashid Boulevard, Al Manzil, Downtown Dubai, Dubai, PO BOX 114822, United Arab Emirates'))
+st.text('The Burj Khalifa is located at the following address: ')
+st.text('Burj Khalifa, 1, Sheikh Mohammed bin Rashid Boulevard, Al Manzil, Downtown Dubai, Dubai, PO BOX 114822, United Arab Emirates'))
 
 
 print(SEPERATOR)
