@@ -45,23 +45,10 @@ SEPERATOR = 500 * '='
 print(SEPERATOR)
 # User Input, map data, and update on the data frame for all locations
 
-df = pd.read_csv("Skyscrapers2021.csv", index_col=0, names=col_names, skiprows=[0])
+
 
 def bar_chart():
-    df = pd.read_table("Skyscrapers2021.csv", delimiter =",")
-    counts = []
-    st.subheader("Number of Locations in each Country")
-    cities = sorted(df["City"].unique().tolist(), reverse=True)
-    cityList = [x for x in cities]
-    for i in cityList:
-        counts.append(df[df['City'] == i].shape[0]
-    y_pos = np.arrange(cityList)
-    plt.bar(y_pos, counts)
-    plt.yticks(y_pos, cityList)
-    plt.title("Skyscrapers per City")
-    plt.xlabel('Number of Skyscrapers')
-    st.pyplot(df)
-
+    df = pd.read_csv("Skyscrapers2021.csv", index_col=0, names=col_names, skiprows=[0])
 
 
  
