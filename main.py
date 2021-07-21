@@ -70,7 +70,7 @@ img1 = Image.open("burj-khalifa.jpg")
 st.image(img1, width=500)
 
 st.text('The Burj Khalifa is located at the following address: ')
-st.text('Burj Khalifa, 1, Sheikh Mohammed bin Rashid Boulevard, Al Manzil, Downtown Dubai, Dubai, PO BOX 114822, United Arab Emirates'))
+st.text('Burj Khalifa, 1, Sheikh Mohammed bin Rashid Boulevard, Al Manzil, Downtown Dubai, Dubai, PO BOX 114822, United Arab Emirates')
 
 
 print(SEPERATOR)
