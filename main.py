@@ -62,6 +62,16 @@ st.title('Top 10 Skyscrapers in the World')
 
 df = pd.read_csv("Skyscrapers2021.csv")
 
+
+st.markdown("## " + 'Names of the Top Ten Skyscrapers in the World')
+st.markdown("#### " +"Which Skyscraper would you like to see?")
+
+selected_metrics = st.selectbox(
+  label="Take your pick!", options=['Burj Khalifa','Shanghai Tower', 'Makkah Royal Clock Tower', 'Ping An Finance Center', 'Lotte World Tower', 'One World Trade Center', 'Guangzhou CTF Finance Centre', 'Tianjin CTF Finance Centre', 'CITIC Tower', 'TAIPEI 101'] 
+
+
+
+
 print("The Largest Building in the World is the Burj Khalifa\n\n")
 st.header('The Largest Building in the World is the Burj Khalifa')
 from PIL import Image
