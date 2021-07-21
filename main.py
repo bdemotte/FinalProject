@@ -80,7 +80,7 @@ main()
 
 
 st.subheader('Height of each of the Top 100 Skyscrapers')
-st.bar_chart(skyscraperdata['In Feet'])
+st.arechart(skyscraperdata['In Feet'])
 
 
 
