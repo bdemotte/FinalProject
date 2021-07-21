@@ -74,7 +74,7 @@ def mapping_data(df):
     
     
     
-def mapping_data(df)
+def mapping_data(df):
   df = pd.DataFrame({'latitude': df['Y'], 'longitude': df['X']})
 
 
