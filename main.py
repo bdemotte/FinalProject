@@ -69,8 +69,7 @@ def select_options(df):
 def mapping_data(df):
     st.map(df)
     
-def data_frame(df):
-    st.write(df)
+
         
     
 def main():
