@@ -64,7 +64,14 @@ def mapping_data(df):
     st.map(df)
     
 
-             
+    
+    
+    
+def main():
+  df = load_data("Skyscrapers2021.csv")
+  select_options(df)
+  
+main()  
 
   
 # THIS ALL WORKS DO NOT MESS WITH THIS SECTION
@@ -177,11 +184,7 @@ st.text('Taipei 101, 7, Section 5, Xinyi Road, Xicun Village, Xinyi District, Xi
 
 # MAY NEED TO MAKE CHANGES HERE
   
-def main():
-  df = load_data("Skyscrapers2021.csv")
-  select_options(df)
-  
-main()   
+ 
   
   
   
