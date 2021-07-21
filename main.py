@@ -39,10 +39,13 @@ pd.set_option('display.width', None)
 pd.set_option('display.max_colwidth', None)
 print(skyscraperdata)
 
-# Create Seperator to view as I build
 
-SEPERATOR = 500 * '='
-print(SEPERATOR)
+def main():
+  df = load_data("Skyscrapers2021.csv")
+  st.title("The Top 100 Skyscrapers in the World Analysis")
+  select_options(df)
+main()
+
 # User Input, map data, and update on the data frame for all locations
 
 
@@ -196,11 +199,7 @@ st.text('Taipei 101, 7, Section 5, Xinyi Road, Xicun Village, Xinyi District, Xi
   
   
   
-def main():
-  df = load_data("Skyscrapers2021.csv")
-  st.title("The Top 100 Skyscrapers in the World Analysis")
-  select_options(df)
-main()
+
 
 
 
