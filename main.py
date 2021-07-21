@@ -51,7 +51,7 @@ def select_options(df):
     st.sidebar.write("Filter On Map")
     df['City'] = df['City']
     CITIES = df['City'].unique()
-    st.subheader("Map to Display Skyscraper Location")
+    
     CITIES_SELECTED = st.sidebar.multiselect('Select Cities to Display', sorted(CITIES))
                  
     mark_cities = df['City'].isin(CITIES_SELECTED)
@@ -174,7 +174,7 @@ st.text('Taipei 101, 7, Section 5, Xinyi Road, Xicun Village, Xinyi District, Xi
   
 def main():
   df = load_data("Skyscrapers2021.csv")
-  
+  select_options(df)
 main()   
   
   
