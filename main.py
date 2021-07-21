@@ -170,13 +170,6 @@ chart_data = pd.DataFrame({
   'height': ['2,717 ft', '2,073 ft', '1,972 ft', '1,965 ft', '1,819 ft', '1,776 ft', '1,739 ft', '1,739 ft', '1,731 ft', '1,667 ft']}
   
  
-p = figure(
-    title='simple line example',
-    x_axis_label='top ten',
-    y_axis_label='height')
 
-p.line(x, y, legend_label='Trend', line_width=2)
-
-st.bokeh_chart(p, use_container_width=True)
 
 
