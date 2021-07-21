@@ -122,7 +122,7 @@ st.text("The Makkah Royal Clock Tower is located at the following address: ")
 st.text('Abraj Al Bait, Western Haram Square, Al Haram, Mecca, Makkah Al Mukarramah, Makkah Region, 24231, Saudi Arabia')
 
 
-print(SEPERATOR)
+
 st.header("The Fourth Largest Building in the World is the Ping An Finance Center")
 from PIL import Image
 img4 = Image.open("ping-an.jpg")
