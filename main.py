@@ -40,8 +40,6 @@ pd.set_option('display.max_colwidth', None)
 print(skyscraperdata)
 
 
-
-
 # User Input, map data, and update on the data frame for all locations
 
 
@@ -65,17 +63,6 @@ def select_options(df):
 def mapping_data(df):
     df = pd.DataFrame({'latitude': df['Y'], 'longitude': df['X']})
     st.map(df)
-                 
-    
-    
-    
-    
-    
-    
-    
-    
-def mapping_data(df):
-  df = pd.DataFrame({'latitude': df['Y'], 'longitude': df['X']})
 
 
  
