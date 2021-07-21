@@ -45,7 +45,13 @@ SEPERATOR = 500 * '='
 print(SEPERATOR)
 # User Input, map data, and update on the data frame for all locations
 
-st.dataframe("Skyscrapers2021.csv")
+
+def load_data(data):
+  df = pd.read_csv("Skyscrapers2021.csv", index_col=0, names=col_names, skiprows=[0])
+
+def mapping_data(df)
+  df = pd.DataFrame({'latitude': df['Y'], 'longitude': df['X']})
+
 
  
 
