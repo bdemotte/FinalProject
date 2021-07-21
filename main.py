@@ -81,7 +81,7 @@ st.bar_chart(skyscraperdata['In Feet'])
 
 st.subheader('Skyscraper Data')
 if st.checkbox('Show Skyscraper Data'):
-    st.subheader('Skyscraper Data’)
+    
     st.write(skyscraperdata)
 #st.write(center_info_data)
 
