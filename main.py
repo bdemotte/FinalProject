@@ -59,7 +59,7 @@ def select_options(df):
                  
     mark_cities = df['City'].isin(CITIES_SELECTED)
     df = df[mark_cities]
-    if st.selectbox.checkbox("Pick the City"):
+    st.selectbox.checkbox("Pick the City"):
     
     mapping_data(df)
              
