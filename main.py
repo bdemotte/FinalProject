@@ -47,10 +47,6 @@ print(SEPERATOR)
 
 
 
-def bar_chart():
-    df = pd.read_csv("Skyscrapers2021.csv", index_col=0, names=col_names, skiprows=[0])
-
-
  
 
 
