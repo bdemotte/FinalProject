@@ -63,15 +63,14 @@ def select_options(df):
 def mapping_data(df):
     df = pd.DataFrame(skyscraperdata)
     st.map(df)
-    
-
-    
+        
     
 def main():
   df = load_data("Skyscrapers2021.csv")
   select_options(df)
   
 main()  
+
 
   
 # THIS ALL WORKS DO NOT MESS WITH THIS SECTION
