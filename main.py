@@ -50,7 +50,7 @@ def get_data():
   return pd.read_csv(data)
 
 def bar_chart():
-    df = load_data("Skyscrapers2021.csv")
+    df = pd.read_table("Skyscrapers2021.csv", delimiter =",")
     counts = []
     st.subheader("Number of Locations in each Country")
     states = sorted(df["City"].unique().tolist(), reverse=True)
