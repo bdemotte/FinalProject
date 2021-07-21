@@ -71,15 +71,14 @@ selected_metrics = st.selectbox(
 
 fig = go.Figure()
 if selected_metrics == 'Burj Khalifa':
-      st.header('The Largest Building in the World is the Burj Khalifa')
-      from PIL import Image
-      img1 = Image.open("burj-khalifa.jpg")
+     st.header('The Largest Building in the World is the Burj Khalifa')
+     from PIL import Image
+     img1 = Image.open("burj-khalifa.jpg")
 
-      st.image(img1, width=500)
+     st.image(img1, width=500)
 
-      print("The Burj Khalifa is located at the following address:\n")
-      st.text('The Burj Khalifa is located at the following address: ')
-      st.text('Burj Khalifa, 1, Sheikh Mohammed bin Rashid Boulevard, Al Manzil, Downtown Dubai, Dubai, PO BOX 114822, United Arab Emirates')
+     st.text('The Burj Khalifa is located at the following address: ')
+     st.text('Burj Khalifa, 1, Sheikh Mohammed bin Rashid Boulevard, Al Manzil, Downtown Dubai, Dubai, PO BOX 114822, United Arab Emirates')
 
 
 print(SEPERATOR)
