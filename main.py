@@ -45,7 +45,7 @@ SEPERATOR = 500 * '='
 print(SEPERATOR)
 # User Input, map data, and update on the data frame for all locations
 
-
+st.dataframe("Skyscrapers2021.csv")
 
  
 
