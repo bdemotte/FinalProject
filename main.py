@@ -60,7 +60,7 @@ def select_options(df):
     
     
 def mapping_data(df):
-    df = pd.DataFrame()
+    df = pd.DataFrame({'latitude', 'longitude'})
     st.map(df)
     
 
