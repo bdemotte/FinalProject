@@ -96,7 +96,7 @@ def bar_chart():
   st.pyplot(plt)
                  
   
- def main():
+def main():
   df = load_data("Skyscrapers2021.csv")
   select_options(df)
   
