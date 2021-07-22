@@ -60,7 +60,7 @@ def select_options(df):
     
     
 st.subheader('View Map and Graph?')
-if st.checkbox('Show Map and Graph')
+if st.checkbox('Show Map and Graph'):
     st.write(
 
   CITIES = df['City'].unique()
