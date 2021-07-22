@@ -53,7 +53,7 @@ def load_data(data):
   df = pd.read_csv("Skyscrapers2021.csv", index_col=0, names=col_names, skiprows=[0])
   return df
 
-def select_options(df):
+def select_options:
   OPTION = st.sidebar('Filter On Map')
     
   CITIES = df['City'].unique()
