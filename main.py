@@ -39,6 +39,7 @@ pd.set_option('display.width', None)
 pd.set_option('display.max_colwidth', None)
 print(skyscraperdata)
 
+st.title('Skyscraper Data Project : Created by Bradley DeMotte')
 
 st.title('Skyscraper Data')
 if st.checkbox('Show Skyscraper Data'):
