@@ -73,11 +73,7 @@ def mapping_data(df):
 
         
     
-def main():
-  df = load_data("Skyscrapers2021.csv")
-  select_options(df)
-  
-main()  
+
 
 
 
@@ -100,7 +96,11 @@ def bar_chart():
   st.pyplot(plt)
                  
   
-                 
+ def main():
+  df = load_data("Skyscrapers2021.csv")
+  select_options(df)
+  
+main()                  
 
 
   
