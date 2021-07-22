@@ -64,7 +64,7 @@ def select_options(df):
   df = df[mark_cities]
     #df_citiesselected = df[df['City'] == CITIES_SELECTED]
     
- 
+  map_data = df[["latitude", "longitue"]] 
   st.map(df)
     
 
