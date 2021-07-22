@@ -97,7 +97,7 @@ def bar_chart(df):
   
 def main():
   df = load_data("Skyscrapers2021.csv")
-  select_options(df)
+  select_options()
   #bar_chart(df)
   
 main()                  
