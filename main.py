@@ -120,7 +120,7 @@ if st.checkbox('Would you like to see the top ten?'):
   st.write(
 
 
-st.title('Top 10 Skyscrapers in the World')
+
 
 st.header('The Largest Building in the World is the Burj Khalifa')
 from PIL import Image
