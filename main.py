@@ -56,6 +56,13 @@ def load_data(data):
 def select_options(df):
   st.sidebar.title('Filter On Map')
     
+    
+    
+    
+st.subheader('View Map and Graph?')
+if st.checkbox('Show Map and Graph')
+    st.write(
+
   CITIES = df['City'].unique()
     
   CITIES_SELECTED = st.sidebar.multiselect('Select Cities to Display', sorted(CITIES))
@@ -98,7 +105,7 @@ def main():
   bar_chart(df)
   
 main()                  
-
+    )
 
   
 # THIS ALL WORKS DO NOT MESS WITH THIS SECTION
