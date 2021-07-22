@@ -1,0 +1,4 @@
+py -m pip install pandas as pd
+py -m pip install streamlit as st
+py -m pip install numpy as np
+py -m pip install matplotlib.pyplot as plt
