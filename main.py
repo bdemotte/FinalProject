@@ -89,6 +89,7 @@ def bar_chart(df):
   ax.set_yticks(y_pos, cityList)
   ax.set_title("Skyscrapers per City")
   ax.set_xlabel('Number of Skyscrapers per City')
+  ax.ion()
   st.pyplot(fig)
                  
   
