@@ -11,7 +11,7 @@ Description:    This is a description of the project
 import pandas as pd
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 
 # Renaming the Columns
