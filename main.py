@@ -63,16 +63,16 @@ st.subheader('View Map and Graph?')
 if st.checkbox('Show Map and Graph'):
     st.write(
 
-  CITIES = df['City'].unique()
+    CITIES = df['City'].unique()
     
-  CITIES_SELECTED = st.sidebar.multiselect('Select Cities to Display', sorted(CITIES))
+    CITIES_SELECTED = st.sidebar.multiselect('Select Cities to Display', sorted(CITIES))
         
-  mark_cities = df['City'].isin(CITIES_SELECTED)
-  df = df[mark_cities]
+    mark_cities = df['City'].isin(CITIES_SELECTED)
+    df = df[mark_cities]
     #df_citiesselected = df[df['City'] == CITIES_SELECTED]
     
    
-  st.map(df)
+    st.map(df)
     
 
         
@@ -106,7 +106,6 @@ def main():
   
 main()                  
     )
-
   
 # THIS ALL WORKS DO NOT MESS WITH THIS SECTION
 
