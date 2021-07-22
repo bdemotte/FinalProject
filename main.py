@@ -83,7 +83,7 @@ def bar_chart(df):
   cityList =sorted(df['City'].unique().tolist())
   for i in cityList:
     counts.append(df[df['City'] == i ].shape[0])
-  y_pos = np.arange(len(cityList))
+  y_pos = np.arange(cityList)
   fig, ax = plt.subplots()
   ax.barh(y_pos, counts)
   ax.set_yticks(y_pos, cityList)
