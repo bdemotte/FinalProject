@@ -13,7 +13,6 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 # Renaming the Columns
 
 col_names = ['Rank',
@@ -30,6 +29,7 @@ col_names = ['Rank',
              'Main Material Utilized',
              'Main Function of Building',
              'Link to Website']
+
 # Import data and read CSV into the program
 
 skyscraperdata = pd.read_csv("Skyscrapers2021.csv", index_col=0, names=col_names, skiprows=[0])
@@ -79,7 +79,7 @@ def select_options(df):
 
 def bar_chart(df):
   counts = []
-  st.subheader("Number of Skyscrapers in each City")
+  st.title("Number of Skyscrapers in each City")
   cityList =sorted(df['City'].unique().tolist())
   for i in cityList:
     counts.append(df[df['City'] == i ].shape[0])
