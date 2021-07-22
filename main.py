@@ -11,7 +11,7 @@ Description:    This is a description of the project
 import pandas as pd
 import streamlit as st
 import numpy as np
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 
 # Renaming the Columns
@@ -88,11 +88,11 @@ def bar_chart(df):
     counts.append(df[df['City'] == i ].shape[0])
   y_pos = np.arange(len(cityList))
   fig, ax = plt.subplots()
-  #ax.barh(y_pos, counts)
-  #ax.set_yticks(y_pos, cityList)
-  #ax.set_title("Skyscrapers per City")
-  #ax.set_xlabel('Number of Skyscrapers per City')
-  #st.pyplot(fig)
+  ax.barh(y_pos, counts)
+  ax.set_yticks(y_pos, cityList)
+  ax.set_title("Skyscrapers per City")
+  ax.set_xlabel('Number of Skyscrapers per City')
+  st.pyplot(fig)
                  
   
 def main():
