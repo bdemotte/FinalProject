@@ -40,7 +40,7 @@ pd.set_option('display.max_colwidth', None)
 print(skyscraperdata)
 
 
-st.subheader('Skyscraper Data')
+st.title('Skyscraper Data')
 if st.checkbox('Show Skyscraper Data'):
     st.write(skyscraperdata)
 
