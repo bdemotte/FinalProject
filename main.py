@@ -82,6 +82,7 @@ def mapping_data(df):
 
 def bar_chart():
   df = load_data("Skyscrapers2021.csv")
+  st.write(df)
   counts = []
   st.subheader("Number of Skyscrapers in each City")
   cities =sorted(df['CITY'].unique().tolist(), reverse=True)
