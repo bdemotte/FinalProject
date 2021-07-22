@@ -107,9 +107,7 @@ main()
 
 # Show various map data and information on the top 10 buildings
 
-st.title('The Top 10 Skyscrapers in the World')
-if st.checkbox('Would you like to see the top ten?'):
-  st.write(
+
 
 st.title('Top 10 Skyscrapers in the World')
 
