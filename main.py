@@ -80,8 +80,7 @@ def mapping_data(df):
 
 # barchart of heights in feet
 
-def bar_chart():
-  df = load_data("Skyscrapers2021.csv")
+def bar_chart(df):
   counts = []
   st.subheader("Number of Skyscrapers in each City")
   cityList =sorted(df['City'].unique().tolist())
@@ -99,7 +98,7 @@ def bar_chart():
 def main():
   df = load_data("Skyscrapers2021.csv")
   select_options(df)
-  #bar_chart()
+  bar_chart(df)
   
 main()                  
 
