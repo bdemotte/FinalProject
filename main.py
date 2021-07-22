@@ -54,7 +54,7 @@ def load_data(data):
   return df
 
 def select_options(df):
-    option = st.sidebar('Filter On Map')
+  OPTION = st.sidebar('Filter On Map')
     
     CITIES = df['City'].unique()
     
