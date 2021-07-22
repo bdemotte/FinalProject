@@ -84,7 +84,23 @@ main()
 
 # barchart of heights in feet
 
-
+def bar_chart():
+  df = load_data("Skyscrapers2021.csv", index_col=0, names=col_names, skiprows=[0]")
+  counts = []
+  st.subheader("Number of Skyscrapers in each City")
+  cities =sorted(df['City'] == i].shape[0]
+  cityList = [x for x in cities]
+  for i in cityList:
+    counts.append(df[df['City'] ==i].shape[0])
+  y_pos = np.arange(len(cityList))
+  plt.barh(y_pos, counts)
+  plt.yticks(y_pos, cityList)
+  plt.title("Skyscrapers per City")
+  plt.xlabel('Number of Skyscrapers per City')
+  st.pyplot(plt)
+                 
+  
+                 
 
 
   
