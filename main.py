@@ -84,7 +84,7 @@ def bar_chart():
   df = load_data("Skyscrapers2021.csv")
   counts = []
   st.subheader("Number of Skyscrapers in each City")
-  cities =sorted(df['City'] == i].shape[0]
+  cities =sorted(df['City'] == ].shape[0]
   cityList = [x for x in cities]
   for i in cityList:
     counts.append(df[df['City'] == ].shape[0])
