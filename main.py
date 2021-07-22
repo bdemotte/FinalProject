@@ -109,11 +109,18 @@ main()
 
 
 
-st.title('Top 10 Skyscrapers in the World')
+
 
 
 df = pd.read_csv("Skyscrapers2021.csv")
 
+
+st.title('The Top 10 Skyscrapers in the World')
+if st.checkbox('Would you like to see the top ten?'):
+  st.write(
+
+
+st.title('Top 10 Skyscrapers in the World')
 
 st.header('The Largest Building in the World is the Burj Khalifa')
 from PIL import Image
@@ -210,6 +217,6 @@ st.image(img10, width=500)
 st.text("The TAIPEI 101 is located at the following address: ")
 st.text('Taipei 101, 7, Section 5, Xinyi Road, Xicun Village, Xinyi District, Xinyi Commercial Zone, Taipei, 11049, Taiwan')
 
-
+  )
 
 # MAY NEED TO MAKE CHANGES HERE
