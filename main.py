@@ -86,7 +86,7 @@ def bar_chart(df):
   y_pos = np.arange(len(cityList))
   fig, ax = plt.subplots()
   ax.barh(y_pos, counts)
-  ax.set_yticks([y_pos, cityList])
+  ax.set_yticks(y_pos, 'City')
   ax.set_title("Skyscrapers per City")
   ax.set_xlabel('Number of Skyscrapers per City')
   st.pyplot(fig)
