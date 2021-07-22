@@ -82,10 +82,10 @@ def mapping_data(df):
 
 def bar_chart():
   df = load_data("Skyscrapers2021.csv")
-  st.write(df)
   counts = []
   st.subheader("Number of Skyscrapers in each City")
   cities =sorted(df['City'].unique().tolist(), reverse=True)
+  st.write(cities)
   cityList = [x for x in cities]
   for i in cityList:
     counts.append(df[df['City'] == i ].shape[0])
