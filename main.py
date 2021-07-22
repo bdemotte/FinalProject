@@ -46,7 +46,7 @@ if st.checkbox('Show Skyscraper Data'):
 
 # User Input, map data, and update on the data frame for all locations
 
-with column 1:
+
 st.title('The Worlds 100 Largest Skyscrapers Map')
 
 def load_data(data):
