@@ -93,7 +93,7 @@ def bar_chart():
   plt.yticks(y_pos, cityList)
   plt.title("Skyscrapers per City")
   plt.xlabel('Number of Skyscrapers per City')
-  st.pyplot(plt)
+st.pyplot(plt)
                  
   
 def main():
