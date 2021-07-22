@@ -109,18 +109,10 @@ main()
 
 
 
-
+st.title('Top 10 Skyscrapers in the World')
 
 
 df = pd.read_csv("Skyscrapers2021.csv")
-
-
-st.title('The Top 10 Skyscrapers in the World')
-if st.checkbox('Would you like to see the top ten?'):
-  st.write(
-
-
-
 
 st.header('The Largest Building in the World is the Burj Khalifa')
 from PIL import Image
