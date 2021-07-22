@@ -53,7 +53,7 @@ def load_data(data):
   df = pd.read_csv("Skyscrapers2021.csv", index_col=0, names=col_names, skiprows=[0])
   return df
 
-def select_options():
+def select_options(df):
   OPTION = st.sidebar('Filter On Map')
     
   CITIES = df['City'].unique()
@@ -97,7 +97,7 @@ def bar_chart(df):
   
 def main():
   df = load_data("Skyscrapers2021.csv")
-  select_options()
+  select_options(df)
   #bar_chart(df)
   
 main()                  
